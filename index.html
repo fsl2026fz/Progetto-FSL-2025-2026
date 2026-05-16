@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html class="light" lang="it"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;family=Geist:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #f9f9f9;
+            color: #1a1c1c;
+        }
+        .sharp-card {
+            background: #ffffff;
+            border: 1px solid #e2e2e2;
+            border-radius: 0.25rem;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+        }
+        .btn-hover:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-lowest": "#ffffff",
+                        "error": "#ba1a1a",
+                        "surface-dim": "#dadada",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "surface-variant": "#e2e2e2",
+                        "surface-container-high": "#e8e8e8",
+                        "surface": "#f9f9f9",
+                        "on-background": "#1a1c1c",
+                        "tertiary-container": "#6f6e6e",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed-variant": "#474743",
+                        "secondary-container": "#e5e2dc",
+                        "secondary-fixed": "#e5e2dc",
+                        "on-primary": "#ffffff",
+                        "on-primary-container": "#fff0ed",
+                        "surface-container": "#eeeeee",
+                        "surface-tint": "#c0000f",
+                        "tertiary": "#575656",
+                        "outline": "#916f6a",
+                        "tertiary-fixed": "#e5e2e1",
+                        "on-secondary-fixed": "#1c1c18",
+                        "on-surface-variant": "#5d3f3c",
+                        "outline-variant": "#e6bdb8",
+                        "on-surface": "#1a1c1c",
+                        "surface-container-low": "#f3f3f4",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed-variant": "#930009",
+                        "background": "#f9f9f9",
+                        "primary": "#b1000d",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#410001",
+                        "secondary": "#5f5e5a",
+                        "primary-container": "#d91e1e",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-container": "#656460",
+                        "inverse-surface": "#2f3131",
+                        "primary-fixed": "#ffdad5",
+                        "secondary-fixed-dim": "#c9c6c1",
+                        "inverse-primary": "#ffb4aa",
+                        "on-tertiary-container": "#f5f2f1",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "primary-fixed-dim": "#ffb4aa",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "surface-bright": "#f9f9f9",
+                        "inverse-on-surface": "#f0f1f1",
+                        "surface-container-highest": "#e2e2e2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Hanken Grotesk", "sans-serif"],
+                        "body": ["Geist", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="font-body bg-background text-on-surface selection:bg-primary/10">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface-container-lowest border-b border-surface-variant flex justify-between items-center px-6 md:px-12 h-20">
+<div class="text-xl font-bold tracking-tight text-on-surface font-headline flex items-center gap-2">
+<div class="w-3 h-3 bg-primary"></div>
+        FSL_PORTFOLIO
+    </div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-primary font-bold border-b-2 border-primary pb-1" href="#azienda">Azienda</a>
+<a class="text-on-surface/70 font-medium hover:text-primary transition-colors" href="#diario">Diario</a>
+<a class="text-on-surface/70 font-medium hover:text-primary transition-colors" href="#galleria">Galleria</a>
+<a class="text-on-surface/70 font-medium hover:text-primary transition-colors" href="#competenze">Competenze</a>
+</div>
+<button class="bg-primary text-on-primary font-bold px-7 py-2.5 rounded-sm btn-hover transition-all">Contattami</button>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[90vh] flex items-center justify-center pt-20 overflow-hidden bg-surface-container-lowest border-b border-surface-variant">
+<div class="absolute inset-0 bg-[linear-gradient(to_right,#1a1c1c08_1px,transparent_1px),linear-gradient(to_bottom,#1a1c1c08_1px,transparent_1px)] bg-[size:40px_40px]"></div>
+<div class="container mx-auto px-6 z-10 text-center max-w-[1200px]">
+<div class="inline-block px-4 py-1 mb-8 border border-primary/20 bg-primary/5 text-primary font-bold text-xs uppercase tracking-widest rounded-sm">
+                Logistics &amp; Graphic Systems • 2025
+            </div>
+<h1 class="text-5xl md:text-7xl font-bold text-on-surface mb-8 tracking-tight font-headline">
+                Il mio percorso FSL
+            </h1>
+<p class="text-lg md:text-xl text-on-surface/70 max-w-2xl mx-auto mb-12">
+                Dall'aula all'azienda: una settimana immersiva presso l'eccellenza di <strong>Sommariva Giulio SRL</strong>.
+            </p>
+<div class="mb-10 font-bold text-primary flex items-center justify-center gap-3">
+<span class="w-12 h-[2px] bg-primary-fixed-dim"></span>
+<span class="text-on-surface">Fabio Zanchi</span>
+<span class="w-12 h-[2px] bg-primary-fixed-dim"></span>
+</div>
+<div class="flex flex-col md:flex-row items-center justify-center gap-5">
+<button class="bg-primary text-on-primary font-bold px-10 py-4 rounded-sm text-lg btn-hover shadow-lg transition-all flex items-center gap-3">
+                    Scopri il progetto
+                    <span class="material-symbols-outlined text-on-primary">arrow_forward</span>
+</button>
+<button class="border-2 border-on-surface text-on-surface font-bold px-10 py-4 rounded-sm text-lg hover:bg-surface-variant transition-all">
+                    Vedi il Diario
+                </button>
+</div>
+</div>
+</section>
+<!-- L'Azienda -->
+<section class="py-24 bg-background" id="azienda">
+<div class="container mx-auto px-6 max-w-[1200px]">
+<div class="grid md:grid-cols-2 gap-0 sharp-card overflow-hidden">
+<div class="p-8 md:p-16 space-y-8 border-r border-surface-variant">
+<h2 class="text-4xl font-bold text-on-surface font-headline">L'Azienda</h2>
+<div class="space-y-5 text-lg text-on-surface-variant leading-relaxed">
+<p class="">Ho avuto il privilegio di svolgere il mio FSL presso un leader nel settore grafico-pubblicitario.</p>
+<p class="">L’azienda ospita lo studio di progettazione, le aree dedicate alla stampa, al taglio e all’assemblaggio dei semilavorati e dei prodotti finiti.</p>
+</div>
+<div class="flex gap-10 pt-4">
+<div class="flex flex-col">
+<span class="text-primary font-bold text-4xl">20</span>
+<span class="text-on-surface/40 text-xs font-bold uppercase tracking-widest mt-1">Ore Formazione</span>
+</div>
+<div class="w-px h-12 bg-surface-variant"></div>
+<div class="flex flex-col">
+<span class="text-primary font-bold text-4xl">PCTO</span>
+<span class="text-on-surface/40 text-xs font-bold uppercase tracking-widest mt-1">Percorso 2025</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest flex items-center justify-center p-12">
+<img alt="Logo Sommariva Giulio SRL" class="max-w-full h-auto transition-all duration-500" src="https://lh3.googleusercontent.com/aida/ADBb0uiE0oBeVOEr-X3E7JBVsrDfDQY-tnA7HC8Mv7tFDGz8WeFTl0BlK5G8PxyDMEMsf_MxaOOP3Jo8bwXiuxhSpWH4qM8B4rJjXySFk16pdvCQAx9LyVlMk6Wpc4paAoSYKWiHJCZ2IaPPYXgMsBLHpLYeUi4S6ERPAjtvRs83UE7cBFr9FMFxLQDUj22Ny8dbkY8CnNBGzDdAGitBYlck_I9Lwu6DnU36LeXJjqzwPot7ZT9YnUVN-Sg1OnMahb4adJw9Jnh6jJffSQ"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Diario di Bordo -->
+<section class="py-24 bg-surface-container-lowest" id="diario">
+<div class="container mx-auto px-6 max-w-[1200px]">
+<div class="text-center mb-20">
+<h2 class="text-4xl font-bold text-on-surface mb-4 font-headline">Diario di Bordo</h2>
+<div class="w-16 h-1 bg-primary mx-auto mb-6"></div>
+<p class="text-on-surface/60 max-w-lg mx-auto">Cronologia operativa delle attività eseguite nel reparto produzione.</p>
+</div>
+<div class="relative wrap overflow-hidden p-0 h-full"><div class="absolute border-opacity-20 border-surface-variant h-full border-r-2 left-1/2 -translate-x-1/2"></div>
+<!-- Day 1 - Left -->
+<div class="mb-12 flex justify-between md:flex-row-reverse items-center w-full left-timeline">
+<div class="order-1 w-5/12 hidden md:block"></div>
+<div class="z-20 flex items-center order-1 bg-surface-container-lowest shadow-sm w-4 h-4 rounded-full border-2 border-primary"></div>
+<div class="order-1 sharp-card w-full md:w-5/12 px-6 py-6 border-r-4 border-r-primary text-right md:border-l-0">
+<div class="mb-3">
+<span class="font-bold text-primary text-sm block">30-06-2025</span>
+<span class="text-on-surface/40 text-[10px] uppercase font-bold tracking-widest">08:00 - 12:00</span>
+</div>
+<h3 class="text-lg font-bold text-on-surface mb-2 font-headline">Attivit  con l'azienda</h3>
+<p class="text-on-surface-variant text-sm">Conoscenza e svolgimento di attivit  con l'azienda. Misurazione di adesivi e applicazione di nastro adesivo.</p>
+</div>
+</div>
+<!-- Day 2 - Right -->
+<div class="mb-12 flex justify-between items-center w-full right-timeline">
+<div class="order-1 w-5/12 hidden md:block"></div>
+<div class="z-20 flex items-center order-1 bg-surface-container-lowest shadow-sm w-4 h-4 rounded-full border-2 border-primary-container"></div>
+<div class="order-1 sharp-card w-full md:w-5/12 px-6 py-6 border-l-4 border-l-primary-container">
+<div class="mb-3">
+<span class="font-bold text-primary text-sm block">01-07-2025</span>
+<span class="text-on-surface/40 text-[10px] uppercase font-bold tracking-widest">08:00 - 12:00</span>
+</div>
+<h3 class="text-lg font-bold text-on-surface mb-2 font-headline">Applicazioni Adesivi</h3>
+<p class="text-on-surface-variant text-sm">Osservazione applicazioni adesivi sui mezzi. Applicazione di nastro adesivo (application).</p>
+</div>
+</div>
+<!-- Day 3 - Left -->
+<div class="mb-12 flex justify-between md:flex-row-reverse items-center w-full left-timeline">
+<div class="order-1 w-5/12 hidden md:block"></div>
+<div class="z-20 flex items-center order-1 bg-surface-container-lowest shadow-sm w-4 h-4 rounded-full border-2 border-primary"></div>
+<div class="order-1 sharp-card w-full md:w-5/12 px-6 py-6 border-r-4 border-r-primary text-right md:border-l-0">
+<div class="mb-3">
+<span class="font-bold text-primary text-sm block">02-07-2025</span>
+<span class="text-on-surface/40 text-[10px] uppercase font-bold tracking-widest">08:00 - 12:00</span>
+</div>
+<h3 class="text-lg font-bold text-on-surface mb-2 font-headline">Conteggio e Ritaglio</h3>
+<p class="text-on-surface-variant text-sm">Misurazione e conteggio adesivi divisi per gruppi da 4. Application e ritaglio di decorazioni.</p>
+</div>
+</div>
+<!-- Day 4 - Right -->
+<div class="mb-12 flex justify-between items-center w-full right-timeline">
+<div class="order-1 w-5/12 hidden md:block"></div>
+<div class="z-20 flex items-center order-1 bg-surface-container-lowest shadow-sm w-4 h-4 rounded-full border-2 border-primary-container"></div>
+<div class="order-1 sharp-card w-full md:w-5/12 px-6 py-6 border-l-4 border-l-primary-container">
+<div class="mb-3">
+<span class="font-bold text-primary text-sm block">03-07-2025</span>
+<span class="text-on-surface/40 text-[10px] uppercase font-bold tracking-widest">08:00 - 12:00</span>
+</div>
+<h3 class="text-lg font-bold text-on-surface mb-2 font-headline">Caricamento e Mezzi Pesanti</h3>
+<p class="text-on-surface-variant text-sm">Rimozione di materiale adesivo dalla superficie di un camion aziendale e successiva riapplicazione.</p>
+</div>
+</div>
+<!-- Day 5 - Left -->
+<div class="mb-12 flex justify-between md:flex-row-reverse items-center w-full left-timeline">
+<div class="order-1 w-5/12 hidden md:block"></div>
+<div class="z-20 flex items-center order-1 bg-surface-container-lowest shadow-sm w-4 h-4 rounded-full border-2 border-primary"></div>
+<div class="order-1 sharp-card w-full md:w-5/12 px-6 py-6 border-r-4 border-r-primary text-right md:border-l-0">
+<div class="mb-3">
+<span class="font-bold text-primary text-sm block">04-07-2025</span>
+<span class="text-on-surface/40 text-[10px] uppercase font-bold tracking-widest">08:00 - 12:00</span>
+</div>
+<h3 class="text-lg font-bold text-on-surface mb-2 font-headline">Decorazione Pullman</h3>
+<p class="text-on-surface-variant text-sm">Pulizia e applicazione di adesivi sul pullman. Adesivi e applicazione di nastro adesivo.</p>
+</div>
+</div></div>
+</div>
+</section>
+<!-- Galleria -->
+<section class="py-24 bg-background" id="galleria">
+<div class="container mx-auto px-6 max-w-[1200px]">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div>
+<h2 class="text-4xl font-bold text-on-surface mb-4 font-headline">Galleria Progetti</h2>
+<p class="text-on-surface/60 font-medium flex items-center gap-3">
+<span class="w-8 h-[2px] bg-primary"></span>
+                        Precisione nell'esecuzione tecnica
+                    </p>
+</div>
+<div class="flex gap-2">
+<button class="p-3 border border-surface-variant bg-surface-container-lowest text-on-surface hover:bg-primary hover:text-on-primary transition-all shadow-sm">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="p-3 border border-surface-variant bg-surface-container-lowest text-on-surface hover:bg-primary hover:text-on-primary transition-all shadow-sm">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Photo 1 -->
+<div class="group relative overflow-hidden sharp-card aspect-[4/5]">
+<img alt="Croce Verde pick-up" class="w-full h-full object-cover transition-all duration-700" src="https://lh3.googleusercontent.com/aida/ADBb0ugx_KqvOJERyI3kt7zQIR8FmvjeosIRKKzsHcxztGtWjKrYWOAksJeiaZBM0CM4g9HtXIp1X0wYHcFZj7r0hdpBn6PvxUKLFp2bKiCJF6hB84q80_YwcfB5JirsTjLK3fVm8bwxHssnhwlEz90eU5Asmaw1i-87VVkiIztxzR89PHNXW_4gb_pneUj63HX8WZLr23ThNBCkIYefRcY1g1pA_6S_LDkvGHMmwdgaAI4ZOdTGcSJHgpTMkmTZUBbQIWjeKdNBRCBRfQ"/>
+<div class="absolute bottom-0 left-0 right-0 p-6 bg-on-surface translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+<span class="text-primary-fixed-dim font-bold text-[10px] uppercase tracking-widest block mb-1">Precision Logistics</span>
+<p class="text-on-primary text-lg font-bold">Croce Verde pick-up</p>
+</div>
+</div>
+<!-- Photo 2 -->
+<div class="group relative overflow-hidden sharp-card aspect-[4/5]">
+<img alt="Novo Nordisk truck" class="w-full h-full object-cover transition-all duration-700" src="https://lh3.googleusercontent.com/aida/ADBb0uio1Ma3O_6oGZuyUP7xn5U2vdHuvwFmDwfZlfoqONBXqIlyAuUOO4ftS_gwlSofrVgi8w1zLGxzrroW51R0KdRMXHvrGHttj07Sdxoao-s966bnSbp0hyeyyfY2B9hrl5OR-JtWWaCrny6RDN9rH_jmmtaWyNSFTEGCbJH_RAMZsOm31lAFeICjZhNd0D7Q_-Tzr_Er0yesAQHqLAhOjGTs-kNEUplXQuV0cBzt-ZkKBu7JJNOa5XOKOvtm7Wn9EoDmw-gaYj7OlQ"/>
+<div class="absolute bottom-0 left-0 right-0 p-6 bg-on-surface translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+<span class="text-primary-fixed-dim font-bold text-[10px] uppercase tracking-widest block mb-1">Corporate Branding</span>
+<p class="text-on-primary text-lg font-bold">Novo Nordisk truck</p>
+</div>
+</div>
+<!-- Photo 3 -->
+<div class="group relative overflow-hidden sharp-card aspect-[4/5]">
+<img alt="Red car wrapping" class="w-full h-full object-cover transition-all duration-700" src="https://lh3.googleusercontent.com/aida/ADBb0uib60Y3786sfkNcY1gOo559sVha0EbUZWSJQMkrdsQWHWISOCKC9pEJYCXlvOpmzET7gWu8ksURl7Y-LDlwG1ewiUB4lyD8FUM-mcL3OxoKkHG3wQSbPQUhJHMx_PhJj6cZkh2j5aZ3S0XVyMayqdefZ_QE7mGtbXPvgzXFqA-W4Mzoooflkuxc3NkEIvOd7Ki5QL_rAqW-ZCkN3clIP0J_0kVNT_VmGOc0Pv4TgpucsmpSbZ3OJHoMcDv3JklX9LfuHxSdybgKfg"/>
+<div class="absolute bottom-0 left-0 right-0 p-6 bg-on-surface translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+<span class="text-primary-fixed-dim font-bold text-[10px] uppercase tracking-widest block mb-1">Advanced Finishing</span>
+<p class="text-on-primary text-lg font-bold">Red car wrapping</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Soft Skills -->
+<section class="py-24 bg-surface-container-lowest" id="competenze">
+<div class="container mx-auto px-6 max-w-[1200px]">
+<h2 class="text-4xl font-bold text-on-surface mb-16 text-center font-headline">Competenze Trasversali</h2>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Problem Solving -->
+<div class="p-10 sharp-card flex flex-col items-start gap-6 group hover:border-primary transition-colors duration-300">
+<div class="w-14 h-14 bg-on-surface flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-3xl">psychology</span>
+</div>
+<div class="space-y-3">
+<h3 class="text-xl font-bold text-on-surface">Problem Solving</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Capacità di affrontare e risolvere criticità tecniche in tempo reale durante la fase di produzione.</p>
+</div>
+</div>
+<!-- Team Working -->
+<div class="p-10 sharp-card flex flex-col items-start gap-6 group hover:border-primary transition-colors duration-300">
+<div class="w-14 h-14 bg-on-surface flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-3xl">groups</span>
+</div>
+<div class="space-y-3">
+<h3 class="text-xl font-bold text-on-surface">Team Working</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Collaborazione attiva e comunicazione efficace con il team di produzione specializzato.</p>
+</div>
+</div>
+<!-- Manual Skill -->
+<div class="p-10 sharp-card flex flex-col items-start gap-6 group hover:border-primary transition-colors duration-300">
+<div class="w-14 h-14 bg-on-surface flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-3xl">handyman</span>
+</div>
+<div class="space-y-3">
+<h3 class="text-xl font-bold text-on-surface">Manual Skill</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Precisione elevata nell'applicazione di pellicole tecniche e materiali adesivi complessi.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-on-surface text-on-primary py-16">
+<div class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center px-8">
+<div class="mb-10 md:mb-0 text-center md:text-left">
+<span class="text-2xl font-bold font-headline tracking-tight flex items-center gap-2 justify-center md:justify-start">
+<div class="w-3 h-3 bg-primary"></div>
+                FSL Portfolio
+            </span>
+<p class="text-on-primary/40 text-sm mt-3">© 2025 FSL Portfolio | Fabio Zanchi x Sommariva Giulio SRL</p>
+</div>
+<div class="flex gap-8">
+<a class="text-on-primary/70 hover:text-primary transition-colors text-xs font-bold uppercase tracking-widest" href="#azienda">Azienda</a>
+<a class="text-on-primary/70 hover:text-primary transition-colors text-xs font-bold uppercase tracking-widest" href="#diario">Diario</a>
+<a class="text-on-primary/70 hover:text-primary transition-colors text-xs font-bold uppercase tracking-widest" href="#galleria">Galleria</a>
+</div>
+</div>
+</footer>
+</body></html>
